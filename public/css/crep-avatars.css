@@ -1,0 +1,59 @@
+.avatar-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: lightgreen;
+    display: -webkit-flex;
+    display: flex;
+    float: left;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    /* Safari 6.1+ */
+    justify-content: center;
+}
+
+.avatar-circle div.avatar-text-2 {
+    color: gray;
+    font: bold 14px/30px Verdana, sans-serif;
+}
+
+.avatar-circle div.avatar-text-3 {
+    color: gray;
+    font: bold 12px/30px Verdana, sans-serif;
+}
+
+.feedDiv {
+    max-height: 200px;
+    min-height: 10px;
+    overflow-y: scroll;
+    padding-bottom: 10px;
+}
+
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote p {
+    display: inline;
+}
+
+.ui.modal {
+    top: 30%;
+}

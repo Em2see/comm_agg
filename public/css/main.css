@@ -1,0 +1,23 @@
+.avatar-circle {
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	background-color: lightgreen;
+	display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+	align-items: center;
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
+    justify-content: center;
+}
+.avatar-circle div.avatar-text-2 {
+	color:gray;
+	font: bold 20px/40px Verdana, sans-serif;
+}
+.avatar-circle div.avatar-text-3 {
+	color:gray;
+	font: bold 16px/40px Verdana, sans-serif;
+}
