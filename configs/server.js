@@ -4,12 +4,10 @@ const multipart = require('C:/gitProjects/nodejs12/node_modules/connect-multipar
 const path = require('path')
 const express = require('express')
 const server = jsonServer.create()
-const router = jsonServer.router('db.json')
+//const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
-const rawNodesData = fs.readFileSync("./configs/db.json");
 const rawHtmlData = fs.readFileSync("./configs/notes_data.txt");
 const rawJsonData = fs.readFileSync("./configs/notes_json_task.txt");
-const data = JSON.parse(rawNodesData);
 
 const getMethods = (obj) => Object.getOwnPropertyNames(obj).filter(item => typeof obj[item] === 'function')
 
@@ -32,12 +30,12 @@ server.use((req, res, next) => {
     next()
 })
 
-server.get('/Remarks', (req, res) => {
-    if (req.url.match(/\/Remarks$/)) {
-        // res.jsonp(data);
-        res.send(rawHtmlData)
-    }
-})
+//server.get('/Remarks', (req, res) => {
+//    if (req.url.match(/\/Remarks$/)) {
+//        // res.jsonp(data);
+//        res.send(rawHtmlData)
+//    }
+//})
 server.get('/Remarks2', (req, res) => {
     if (req.url.match(/\/Remarks2/)) {
         // res.jsonp(data);
@@ -46,7 +44,7 @@ server.get('/Remarks2', (req, res) => {
 })
 
 // Use default router
-server.use(router)
+//server.use(router)
 server.listen(3000, () => {
     console.log('JSON Server is running')
 })

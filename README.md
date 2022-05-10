@@ -16,13 +16,15 @@ Comments agregator collect comments in Status and provide specific output.
 npm run start
 ```
 
-or create new version of the js bundle
+### Create code for tampermonkey
+
+1. create new version of the js bundle
 
 ```bash
 npm run nonprod:test
 ```
 
-4. Run python simple server on port 7000
+2. Run python simple server on port 7000
 For serving for greasemonkey local test
 
 ```bash
